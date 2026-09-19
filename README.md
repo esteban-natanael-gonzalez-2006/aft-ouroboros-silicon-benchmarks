@@ -2,12 +2,12 @@
 
 [![License: Evaluation](https://img.shields.io/badge/License-Academic%20Evaluation-blue.svg)](LICENSE)
 [![Platform: ARM64 / Snapdragon 870](https://img.shields.io/badge/Hardware-Snapdragon%20870%20(Kryo%20585)-orange.svg)](#hardware-testbed)
-[![Paper](https://img.shields.io/badge/Technical%20Paper-PDF%20Available-green.svg)](paper/AFT Ouroboros Technical White Paper.pdf)
+[![Paper](https://img.shields.io/badge/Technical%20Paper-PDF%20Available-green.svg)](paper/AFT_Ouroboros_Technical_White_Paper.pdf)
 
 Official experimental benchmark suite and technical white paper for **AFT_Ouroboros**, an associative continuous-state architecture operating within the L2 CPU cache of consumer mobile silicon.
 
 ## Technical White Paper
-* **Full Report (8 Pages, IEEE format):** [`paper/AFT Ouroboros Technical White Paper.pdf`](paper/AFT Ouroboros Technical White Paper.pdf)  
+* **Full Report (8 Pages, IEEE format):** [`paper/AFT_Ouroboros_Technical_White_Paper.pdf`](paper/AFT_Ouroboros_Technical_White_Paper.pdf)  
   *AFT_Ouroboros: Asymptotic Reduction, Sub-Watt Silicon Execution, and Empirical Evidence Matrix on Consumer Hardware.*
 
 ---
