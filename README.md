@@ -18,7 +18,7 @@ Official experimental benchmark suite and technical white paper for **AFT_Ourobo
 | :--- | :--- | :--- |
 | **Anti-DCE Hardware Control (TEST 01)** | Physical execution ratio $T_{B2}/T_{B1} = 675,535\times$ | Measured |
 | **Mathematical Equivalence (TEST 11)** | Residual error $\epsilon_{\text{rel}} \le 0.0152\%$ in FP32 vs Pairwise | Measured |
-| **Pairwise Quadratic Scaling (TEST 12)** | $\hat{\alpha} = 2.18 \pm 0.19$ ($IC_{95\%}: [1.99, 2.38]$, $R^2 = 0.994$) | Measured |
+| **Pairwise Quadratic Scaling (TEST 12)** | alpha = 2.18 +- 0.19 (CI 95%: [1.99, 2.38], R2 = 0.994) | Measured |
 | **Descartes Asymptotic Scaling (TEST 12)** | Affine model $T(N) = 1.341\text{ }\mu\text{s} + 15.39\text{ ns}\cdot N$ ($R^2 = 0.9996$) | Measured |
 | **Intrinsic Training Throughput (TEST 13)** | $15,031\text{ tokens/s}$ constant across epochs ($T_{\text{CPU}} \approx 5.45\text{ s}$) | Measured |
 | **Power Dissipation** | Estimated $\le 0.455\text{ W}$ (sub-watt execution) | Calculated |
