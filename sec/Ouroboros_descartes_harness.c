@@ -7,7 +7,7 @@
  *
  * Módulos Formales de Validación:
  *   - TEST 11: Equivalencia Matemática Rigurosa Pairwise <-> Descartes (FP32)
- *   - TEST 12: Ajuste Formal de Exponentes de Escalamiento T(N) = c * N^alpha
+ *   - TEST 12: Ajuste Formal de Exponentes de Escalamiento T(N) = c * N^alph
  *              y Ajuste Afín Lineal T_D(N) = a + b*N
  *
  * Dispositivos Soportados:
