@@ -7,7 +7,7 @@
 Official experimental benchmark suite and technical white paper for **AFT_Ouroboros**, an associative continuous-state architecture operating within the L2 CPU cache of consumer mobile silicon.
 
 ## Technical White Paper
-* **Full Report (8 Pages, IEEE format):** [`paper/AFT_Ouroboros_Technical_White_Paper.pdf`](paper/AFT_Ouroboros_Technical_White_Paper.pdf)  
+* **Full Report (8 Pages, IEEE format):** [`paper/AFT Ouroboros Technical White Paper.pdf`](paper/AFT Ouroboros Technical White Paper.pdf)  
   *AFT_Ouroboros: Asymptotic Reduction, Sub-Watt Silicon Execution, and Empirical Evidence Matrix on Consumer Hardware.*
 
 ---
