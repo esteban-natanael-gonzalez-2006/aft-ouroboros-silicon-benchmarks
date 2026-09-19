@@ -37,27 +37,33 @@ Official experimental benchmark suite and technical white paper for **AFT_Ourobo
 ```bash
 git clone [https://github.com/esteban-natanael-gonzalez-2006/aft-ouroboros-silicon-benchmarks.git](https://github.com/esteban-natanael-gonzalez-2006/aft-ouroboros-silicon-benchmarks.git)
 cd aft-ouroboros-silicon-benchmarks
+```
 
 ### 2. Compilation
 ```bash
 For In-Order / Low-Power Cores (e.g., ARM Cortex-A53 / MediaTek Helio G37):
+```
 
 For Out-of-Order / High-Performance Cores (e.g., Kryo 585 / Cortex-A77 / Snapdragon 870):
 ```bash
 clang -Wall -Wextra -O3 -march=armv8.2-a -mcpu=cortex-a77 -ffast-math src/ouroboros_descartes_harness.c -o harness -lm
+```
 
 For Generic x86_64 / Linux / macOS:
 ```bash
 gcc -Wall -Wextra -O3 src/ouroboros_descartes_harness.c -o harness -lm
+```
 
 ### 3. Execution
 Balanced Mode (Recommended for mobile devices and low-power cores to avoid thermal throttling):
 ```bash
 ./harness --moto
+```
 
 Performance Mode (Full calibration iterations for high-end mobile SoCs and desktop CPUs):
 ```bash
 ./harness
+```
 
 ## Expected Empirical Results
 A successful replication will yield:
