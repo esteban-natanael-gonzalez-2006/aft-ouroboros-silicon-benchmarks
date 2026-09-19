@@ -33,7 +33,39 @@ Official experimental benchmark suite and technical white paper for **AFT_Ourobo
 * `clang` (recommended) or `gcc`.
 * `taskset` (for CPU affinity).
 
-### 1. Verify Dataset Integrity
+### 1. Clone the Repository
 ```bash
-sha256sum data/corpus_curado_100kb.txt
-# Expected: e82fa4e7689835bfd8c3db7195c83de620abb6e0cb9441d00ef2e27e5c1ac9ab
+git clone [https://github.com/esteban-natanael-gonzalez-2006/aft-ouroboros-silicon-benchmarks.git](https://github.com/esteban-natanael-gonzalez-2006/aft-ouroboros-silicon-benchmarks.git)
+cd aft-ouroboros-silicon-benchmarks
+
+### 2. Compilation
+```bash
+For In-Order / Low-Power Cores (e.g., ARM Cortex-A53 / MediaTek Helio G37):
+
+For Out-of-Order / High-Performance Cores (e.g., Kryo 585 / Cortex-A77 / Snapdragon 870):
+```bash
+clang -Wall -Wextra -O3 -march=armv8.2-a -mcpu=cortex-a77 -ffast-math src/ouroboros_descartes_harness.c -o harness -lm
+
+For Generic x86_64 / Linux / macOS:
+```bash
+gcc -Wall -Wextra -O3 src/ouroboros_descartes_harness.c -o harness -lm
+
+### 3. Execution
+Balanced Mode (Recommended for mobile devices and low-power cores to avoid thermal throttling):
+```bash
+./harness --moto
+
+Performance Mode (Full calibration iterations for high-end mobile SoCs and desktop CPUs):
+```bash
+./harness
+
+## Expected Empirical Results
+A successful replication will yield:
+Numerical Residual: Maximum relative error \epsilon_{\text{rel}} \le 0.0152\% for N \le 256, bounded by single-precision FP32 rounding over 130,000+ pairs.
+Scaling Exponents (\text{OLS Log-Log}):
+\text{Pairwise} \to \hat{\alpha} \approx 2.00 \pm 0.05 with R^2 > 0.999.
+\text{Descartes} \to \text{Affine Model } T(N) = a + b \cdot N \text{ with } R^2 > 0.97.
+Anti-DCE Verification: Inline volatile assembly barriers guarantee that the compiler does not optimize away contractions.
+Intellectual Property & Legal Notice
+The mathematical theorem and public benchmarking harness contained herein are provided for peer review and scientific verification. All topological phase modulation rules, Butterfly coupling generator sequences, typed-slot architectures, and proprietary binary implementations are strictly reserved under trade secret protection and pending patent rights by the author.
+Institutional Contact: esteban@aft-ouroboros.org
