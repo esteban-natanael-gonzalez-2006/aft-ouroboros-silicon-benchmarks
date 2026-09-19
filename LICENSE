@@ -1,0 +1,22 @@
+AFT_Ouroboros Academic Evaluation & Research License
+Copyright (c) 2026 Esteban Natanael Gonzalez. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted solely for non-commercial academic research, reproducibility audits,
+and scientific peer review, provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions, and the following disclaimer.
+2. The software and technical data may NOT be used for any commercial purpose,
+   military applications, or industrial deployment without prior written authorization
+   and a formal licensing agreement from the author.
+3. No reverse engineering, extraction of underlying geometric Clifford algebra
+   mappings, or derivation of proprietary ASIC/RTL designs is permitted.
+4. Any publication, thesis, or technical report evaluating this benchmark must
+   cite the official AFT_Ouroboros Technical White Paper.
+
+DISCLAIMER:
+THIS SOFTWARE AND BENCHMARK SUITE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.

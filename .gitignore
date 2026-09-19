@@ -1,0 +1,11 @@
+*.o
+*.s
+ouroboros_*
+!ouroboros_*.c
+!ouroboros_*.sh
+*.aux
+*.log
+*.out
+*.toc
+.DS_Store
+*.tmp
